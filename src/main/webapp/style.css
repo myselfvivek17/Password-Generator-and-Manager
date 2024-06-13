@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    /* Fixed height for the navigation bar */
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+    justify-content: space-between;
+    /* Ensure the navigation bar stays on top of other content */
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.username {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+    top: 1;
+    /* Align the dropdown to the right edge of its container */
+}
+
+.user-dropdown {
+    position: relative;
+    /* Ensure the dropdown content is positioned relative to this container */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.user-dropdown:hover .dropdown-content {
+    display: block;
+}
+.form {
+    margin-top: 30vh;
+    /* Adjust the top margin */
+    margin-bottom: 20vh;
+    /* Adjust the bottom margin */
+    width: 500px;
+    /* Adjust form width as needed */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Adjust transparency */
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    /* Glass effect */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.form input[type="text"],
+.form input[type="number"] {
+    width: calc(100% - 10px);
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form label {
+    margin-bottom: 5px;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:last-child {
+    margin-right: 0;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#pass {
+    width: calc(100% - 80px);
+    /* Adjust width to accommodate the copy button */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+#copyButton {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    /* Move the button 1px down */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+#copyButton:hover {
+    background-color: #0056b3;
+}
+.saver{
+    display: none;
+    position: absolute;
+    /* display: flex; */
+    flex-direction: column;
+    z-index: 3;
+    filter: none;
+}
+.saver .close{
+    background-color: red;
+    font-size: smaller;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+    margin-right: 10px;
+}
