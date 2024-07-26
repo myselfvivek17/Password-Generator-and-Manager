@@ -85,6 +85,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Arcot Vivek - [Your Email]
 
 Project Link: [https://github.com/myselfvivek17/Password-Generator-and-Manager](https://github.com/myselfvivek17/Password-Generator-and-Manager)
